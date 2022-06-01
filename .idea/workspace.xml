@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b0d9c24-231c-4f88-9878-704aba90100f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/controllers/CitizenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/models/dto/ChildrenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/repository/CitizenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/service/CitizenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/EcommerceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/CitizenApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/config/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/config/ModelMapperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/config/RequestCorsFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/controllers/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/controllers/InvoiceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/controllers/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/controllers/SearchController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/controllers/ShoppingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/controllers/SupplierController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/controllers/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/exception/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/exception/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/exception/NoSuchSupplierExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/exception/SupplierAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/fts/SqlFunctionsMetadataBuilderContributor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/ERole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/InvoiceDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/dto/CommentDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/models/dto/CitizenDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/dto/ShoppingCartDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/dto/ShoppingSessionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/dto/SupplierDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/OrderItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/PaymentDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/models/entity/Citizen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/ProductCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/ProductInventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/ShoppingCart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/ShoppingSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/models/entity/Supplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/payload/request/CreateProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/payload/request/CreateCitizenRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/payload/request/GetInvoiceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/payload/request/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/payload/request/SignupRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/payload/response/GetInvoiceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/payload/response/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/payload/response/MessageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/CommentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/PaymentDetailsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/ProductCategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/ProductInventoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/ShoppingCartRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/ShoppingSessionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/SupplierRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/d14ai/citizen/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/security/jwt/AuthEntryPointJwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/security/jwt/AuthTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/security/jwt/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/security/services/UserDetailsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/security/services/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/service/InvoiceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/service/ShoppingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agile/ecommerce/service/SupplierService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/invoice.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/agile/ecommerce/EcommerceApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\200159\.m2\wrapper\dists\apache-maven-3.8.4-bin\52ccbt68d252mdldqsfsn03jlf\apache-maven-3.8.4" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectId" id="27W0ANOHjxGJFbQEzjjl0QuQdzh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="LombokPluginIS_EXTSION_METHOD_Enabled" value="true" />
+    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/d14ai/citizen" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.agile.ecommerce" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.d14ai.citizen.models.entity" />
+      <recent name="com.d14ai.citizen.models.dto" />
+      <recent name="com.agile.ecommerce.models" />
+      <recent name="com.agile.ecommerce.payload.request" />
+      <recent name="com.agile.ecommerce.payload.response" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\200159\Documents\Ozyegin Uni - Computer Science M.Sc\Dev\citizen-backend\src\main\java\com\d14ai\citizen" />
+      <recent name="C:\Users\200159\Documents\Ozyegin Uni - Computer Science M.Sc\Dev\ecommerce-backend\src\main\java\com\agile\ecommerce\service" />
+      <recent name="C:\Users\200159\Documents\Ozyegin Uni - Computer Science M.Sc\Dev\ecommerce-backend\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CitizenApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.d14ai.citizen.CitizenApplication" />
+      <module name="citizen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b0d9c24-231c-4f88-9878-704aba90100f" name="Default Changelist" comment="" />
+      <created>1649420404883</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649420404883</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1649420603258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1649420603258" />
+    <state x="223" y="63" width="1089" height="761" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1654020011584">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="63" width="1089" height="761" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1654020011584" />
+    <state x="2143" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1652375671842" />
+    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1654020009814">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1654020009814" />
+    <state x="253" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1649977169591">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="253" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1649977169591" />
+    <state x="530" y="281" width="476" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1653584431786">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="530" y="281" width="476" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1653584431786" />
+    <state x="566" y="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1649977172833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1649977172833" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1654078989394">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1654078989394" />
+    <state x="892" y="288" key="DetectedRootsChooserDialog" timestamp="1649421890745">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="892" y="288" key="DetectedRootsChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1649421890745" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1652443318770">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1652443318770" />
+    <state x="2013" y="93" width="1350" height="638" key="DiffContextDialog/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1652440644430" />
+    <state x="801" y="154" key="FileChooserDialogImpl" timestamp="1653933765739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="801" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1653933765739" />
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom" timestamp="1654101906341">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654101906341" />
+    <state width="1493" height="417" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1652537239936" />
+    <state width="1493" height="267" key="GridCell.Tab.0.center" timestamp="1654101906341">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654101906341" />
+    <state width="1493" height="417" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1652537239936" />
+    <state width="1493" height="267" key="GridCell.Tab.0.left" timestamp="1654101906341">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654101906341" />
+    <state width="1493" height="417" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1652537239936" />
+    <state width="1493" height="267" key="GridCell.Tab.0.right" timestamp="1654101906341">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654101906341" />
+    <state width="1493" height="417" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1652537239936" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1654101771003">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654101771003" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1654101771003">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1654101771003" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1654101771003">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1654101771003" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1654101771003">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1654101771003" />
+    <state x="598" y="70" key="Maven.ArtifactSearchDialog" timestamp="1653586691290">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="598" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1653586691290" />
+    <state x="398" y="115" key="RollbackChangesDialog" timestamp="1653585778743">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="398" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1653585778743" />
+    <state x="622" y="0" width="914" height="824" key="SettingsEditor" timestamp="1651213229683">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="622" y="0" width="914" height="824" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1651213229683" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1649977183237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1649977183237" />
+    <state x="209" y="141" width="931" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1654101371170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="141" width="931" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1654101371170" />
+    <state x="360" y="33" key="new project wizard" timestamp="1653584221072">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1653584221072" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1654078532698">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1654078532698" />
+    <state x="811" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1654069664977">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="811" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1654069664977" />
+    <state x="2731" y="146" width="672" height="685" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1652387835932" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d14ai/citizen/controllers/SupplierController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d14ai/citizen/service/CitizenService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d14ai/citizen/service/CitizenService.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d14ai/citizen/controllers/CitizenController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d14ai/citizen/service/CitizenService.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d14ai/citizen/service/CitizenService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d14ai/citizen/service/CitizenService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/d14ai/citizen/service/CitizenService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="20" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.d14ai.citizen.models.entity.Citizen" memberName="children" />
+        <PinnedItemInfo parentTag="com.d14ai.citizen.models.entity.Citizen" memberName="id" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="MavenRunConfiguration">
+        <watch expression="createCitizenRequest.children.get(0).name" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ecommerce$CitizenApplication.ic" NAME="CitizenApplication Coverage Results" MODIFIED="1654020186806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

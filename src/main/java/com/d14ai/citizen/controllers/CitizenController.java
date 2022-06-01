@@ -21,9 +21,20 @@ public class CitizenController {
     public ResponseEntity<List<Citizen>> getAllCitizens() {
         return ResponseEntity.ok(citizenService.getAllCitizens());
     }
+
     @PostMapping
     public void createCitizen(@RequestBody CreateCitizenRequest createCitizenRequest) throws ErrorResponse {
            citizenService.createCitizen(createCitizenRequest);
     }
+    @GetMapping(value = "/isCitizen")
+    public ResponseEntity<List<Citizen>> getAllIsCitizenTrue() {
+        return ResponseEntity.ok(citizenService.getAllIsCitizenTrue());
+    }
+
+    @GetMapping(value = "/numberOfChildren/{numberOfChildren}")
+    public ResponseEntity<List<Citizen>> getAllWithNumberOfChildren(@PathVariable final Integer numberOfChildren) {
+        return ResponseEntity.ok(citizenService.getAllWithNumberOfChildren(numberOfChildren));
+    }
+
 
 }

@@ -19,6 +19,18 @@ public class CitizenService {
     @Autowired
     private ModelMapper modelMapper;
 
+    public List<Citizen> getAllIsCitizenTrue() {
+        List<Citizen> citizenList = citizenRepository.findAllIsCitizenTrue();
+
+        return citizenList;
+    }
+
+    public List<Citizen> getAllWithNumberOfChildren(Integer numberOfChildren) {
+        List<Citizen> citizenList = citizenRepository.findAllWithNumberOfChildren(numberOfChildren);
+
+        return citizenList;
+    }
+
     public List<Citizen> getAllCitizens() {
         List<Citizen> citizenList = citizenRepository.findAll();
 
@@ -42,6 +54,8 @@ public class CitizenService {
         newCitizen.setChildren(newCitizenChildren);
         citizenRepository.save(newCitizen);
         }
+
+
 
 
 

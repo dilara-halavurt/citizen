@@ -13,5 +13,10 @@ import java.util.Optional;
 public interface CitizenRepository extends JpaRepository<Citizen, Integer> {
     List<Citizen> findByName(String name);
 
+    @Query("SELECT c FROM Citizen c WHERE c.isCitizen = true")
+    List<Citizen> findAllIsCitizenTrue();
+
+    @Query("SELECT c FROM Citizen c WHERE c.children.size = :numberOfChildren")
+    List<Citizen> findAllWithNumberOfChildren(@Param("numberOfChildren") Integer numberOfChildren);
 }
 

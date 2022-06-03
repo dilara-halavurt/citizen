@@ -40,6 +40,12 @@ public class CitizenService {
         return citizenList;
     }
 
+    public List<Citizen> findCitizenByNameLike(String name) {
+        List<Citizen> citizenList = citizenRepository.findCitizenByNameLike(name);
+
+        return citizenList;
+    }
+
     public List<Citizen> getAllCitizens() {
         List<Citizen> citizenList = citizenRepository.findAll();
 

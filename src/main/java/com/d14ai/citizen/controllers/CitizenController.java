@@ -35,6 +35,10 @@ public class CitizenController {
     public ResponseEntity<List<Citizen>> getAllHasDriversLiscense() {
         return ResponseEntity.ok(citizenService.getAllHasDriversLicense());
     }
+    @GetMapping(value = "/byName/{name}")
+    public ResponseEntity<List<Citizen>> findCitizenByNameLike(@PathVariable final String name) {
+        return ResponseEntity.ok(citizenService.findCitizenByNameLike(name));
+    }
 
     @GetMapping(value = "/numberOfChildren/{numberOfChildren}")
     public ResponseEntity<List<Citizen>> getAllWithNumberOfChildren(@PathVariable final Integer numberOfChildren) {

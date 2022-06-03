@@ -11,7 +11,8 @@ import java.util.Optional;
 
 @Repository
 public interface CitizenRepository extends JpaRepository<Citizen, Integer> {
-    List<Citizen> findByName(String name);
+    @Query("SELECT c FROM Citizen c WHERE c.name like '%:name%'")
+    List<Citizen> findCitizenByNameLike(@Param("name") String name);
     @Query("SELECT c FROM Citizen c WHERE c.isCitizen = true")
     List<Citizen> findAllIsCitizenTrue();
     @Query("SELECT c FROM Citizen c WHERE c.hasDrivingLicense = true")

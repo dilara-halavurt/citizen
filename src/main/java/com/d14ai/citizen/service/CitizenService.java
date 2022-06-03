@@ -53,7 +53,7 @@ public class CitizenService {
     }
     public Citizen getById(Integer id) {
         Citizen citizen = id != null ? citizenRepository.findById(id)
-                .orElseThrow(RuntimeException::new): new Citizen();
+                .orElseThrow(NoSuchCitizenExistsException::new): new Citizen();
         return citizen;
     }
 

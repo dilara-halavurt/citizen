@@ -41,7 +41,7 @@ public class CitizenService {
     }
 
     public List<Citizen> findCitizenByNameLike(String name) {
-        List<Citizen> citizenList = citizenRepository.findCitizenByNameLike(name);
+        List<Citizen> citizenList = citizenRepository.findByNameContainingIgnoreCase(name);
 
         return citizenList;
     }

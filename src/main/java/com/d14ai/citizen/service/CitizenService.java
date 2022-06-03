@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CitizenService {
@@ -24,6 +25,12 @@ public class CitizenService {
 
         return citizenList;
     }
+    public List<Citizen> getAllHasDriversLicense() {
+        List<Citizen> citizenList = citizenRepository.findAllHasDriversLicense();
+
+        return citizenList;
+    }
+
 
     public List<Citizen> getAllWithNumberOfChildren(Integer numberOfChildren) {
         List<Citizen> citizenList = citizenRepository.findAllWithNumberOfChildren(numberOfChildren);
@@ -35,6 +42,11 @@ public class CitizenService {
         List<Citizen> citizenList = citizenRepository.findAll();
 
         return citizenList;
+    }
+    public Citizen getById(Integer id) {
+        Citizen citizen = id != null ? citizenRepository.findById(id)
+                .orElseThrow(RuntimeException::new): new Citizen();
+        return citizen;
     }
 
     public void createCitizen(CreateCitizenRequest createCitizenRequest) throws ErrorResponse {

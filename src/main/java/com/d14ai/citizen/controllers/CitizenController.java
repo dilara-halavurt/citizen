@@ -30,11 +30,19 @@ public class CitizenController {
     public ResponseEntity<List<Citizen>> getAllIsCitizenTrue() {
         return ResponseEntity.ok(citizenService.getAllIsCitizenTrue());
     }
+    @GetMapping(value = "/hasDriversLiscense")
+    public ResponseEntity<List<Citizen>> getAllHasDriversLiscense() {
+        return ResponseEntity.ok(citizenService.getAllHasDriversLicense());
+    }
 
     @GetMapping(value = "/numberOfChildren/{numberOfChildren}")
     public ResponseEntity<List<Citizen>> getAllWithNumberOfChildren(@PathVariable final Integer numberOfChildren) {
         return ResponseEntity.ok(citizenService.getAllWithNumberOfChildren(numberOfChildren));
     }
 
+    @GetMapping(value = "/byId/{id}")
+    public ResponseEntity<Citizen> getById(@PathVariable final Integer id) {
+        return ResponseEntity.ok(citizenService.getById(id));
+    }
 
 }

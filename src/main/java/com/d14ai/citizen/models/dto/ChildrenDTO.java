@@ -8,10 +8,10 @@ import lombok.Setter;
 public class ChildrenDTO {
 
     private Integer childId;
-    private String name;
+    private String childName;
 
 
     public Integer getChildId(){ return childId;}
-    public String getName(){ return name;}
+    public String getName(){ return childName;}
 
 }

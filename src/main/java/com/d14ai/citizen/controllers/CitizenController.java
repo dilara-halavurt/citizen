@@ -4,6 +4,7 @@ import com.d14ai.citizen.exception.ErrorResponse;
 import com.d14ai.citizen.models.dto.CitizenDTO;
 import com.d14ai.citizen.models.entity.Citizen;
 import com.d14ai.citizen.payload.request.CreateCitizenRequest;
+import com.d14ai.citizen.payload.request.UpdateCitizenRequest;
 import com.d14ai.citizen.service.CitizenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -43,6 +44,10 @@ public class CitizenController {
     @GetMapping(value = "/byId/{id}")
     public ResponseEntity<Citizen> getById(@PathVariable final Integer id) {
         return ResponseEntity.ok(citizenService.getById(id));
+    }
+    @PatchMapping(value = "/update")
+    public void updateCitizen(@RequestBody UpdateCitizenRequest updateCitizenRequest) throws ErrorResponse {
+        citizenService.updateCitizen(updateCitizenRequest);
     }
 
 }

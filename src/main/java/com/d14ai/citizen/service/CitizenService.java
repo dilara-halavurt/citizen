@@ -1,9 +1,11 @@
 package com.d14ai.citizen.service;
 
 import com.d14ai.citizen.exception.ErrorResponse;
+import com.d14ai.citizen.exception.NoSuchCitizenExistsException;
 import com.d14ai.citizen.models.dto.ChildrenDTO;
 import com.d14ai.citizen.models.entity.Citizen;
 import com.d14ai.citizen.payload.request.CreateCitizenRequest;
+import com.d14ai.citizen.payload.request.UpdateCitizenRequest;
 import com.d14ai.citizen.repository.*;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,14 +60,37 @@ public class CitizenService {
         HashMap<String, Integer> newCitizenChildren = new HashMap<String, Integer>();
         if( !childrenDTO.isEmpty()) {
             for (ChildrenDTO childDTO : childrenDTO) {
-                if (citizenRepository.findById(childDTO.getChildId()) != null) {
+                if (!citizenRepository.findById(childDTO.getChildId()).isEmpty()) {
                     newCitizenChildren.put(childDTO.getName(), childDTO.getChildId());
-                } else throw new ErrorResponse("This child is not a citizen!");
+                } else throw new NoSuchCitizenExistsException("No child with this ID exists.");
+
             }
         }
         newCitizen.setChildren(newCitizenChildren);
         citizenRepository.save(newCitizen);
         }
+
+    public void updateCitizen(UpdateCitizenRequest updateCitizenRequest) throws ErrorResponse {
+        Integer id = updateCitizenRequest.getId();
+        Citizen citizen = id != null ? citizenRepository.findById(id)
+                .orElseThrow(RuntimeException::new): new Citizen();
+        List<ChildrenDTO> childrenDTO = updateCitizenRequest.getChildren();
+        HashMap<String, Integer> newCitizenChildren = new HashMap<String, Integer>();
+        if( !childrenDTO.isEmpty()) {
+            for (ChildrenDTO childDTO : childrenDTO) {
+                if (citizenRepository.findById(childDTO.getChildId()) != null) {
+                    newCitizenChildren.put(childDTO.getName(), childDTO.getChildId());
+                }
+            }
+        }
+        citizen.setChildren(newCitizenChildren);
+        citizen.setIsCitizen(updateCitizenRequest.getIsCitizen());
+        citizen.setHasDrivingLicense(updateCitizenRequest.getHasDrivingLicense());
+        citizen.setName(updateCitizenRequest.getName());
+
+
+        citizenRepository.save(citizen);
+    }
 
 
 
